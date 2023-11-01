@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "907974340182",
+    "project_id": "lisnifymusic",
+    "storage_bucket": "lisnifymusic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907974340182:android:e936acdf4aed44f63295f7",
+        "android_client_info": {
+          "package_name": "com.musicstremingapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdW-VfBC_2HkoO6Mif2FzEsUsp3kG2A2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+    <LinearLayout
+        android:id="@+id/d_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/d_icon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/_30sdp"
+                app:srcCompat="@drawable/cloud_music" />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/a_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    </LinearLayout>
+    </LinearLayout>
+
+<!--    Show all songs file start-->
+    <FrameLayout
+        android:id="@+id/main_frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/BottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_logo">
+
+    </FrameLayout>
+
+<!--    all song file end-->
+    
+<!--    <LinearLayout-->
+<!--        android:id="@+id/controls"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/BottomNavigationView"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center">-->
+
+<!--        <com.example.jean.jcplayer.view.JcPlayerView-->
+<!--            android:id="@+id/jcplayer_d"-->
+<!--            android:layout_height="110dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:visibility="gone"-->
+<!--            android:background="@color/lightray_skyblue"/>-->
+<!--    </LinearLayout>-->
+    <ImageView
+        android:id="@+id/show_player"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/ic_showplayer"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/BottomNavigationView"
+        android:background="@color/lightray_skyblue"/>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        android:background="@color/tranEdit"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

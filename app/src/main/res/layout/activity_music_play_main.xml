@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/music_backgraundcolor"
+    android:layout_height="match_parent"
+    tools:context=".MusicPlayMainActivity">
+    <LinearLayout
+        android:id="@+id/names"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/backarrow"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="-40dp">
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:gravity="center"
+            android:fontFamily="@font/amaranth"
+            android:background="@android:color/transparent"
+            android:textSize="26dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"/>
+        <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Artistname"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/amaranth"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+        <ImageView
+            android:id="@+id/song_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_margin="@dimen/_20sdp"
+            android:src="@drawable/musicplay_image"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/controls_main"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/names">
+
+
+        <com.example.jean.jcplayer.view.JcPlayerView
+            android:id="@+id/jcplayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

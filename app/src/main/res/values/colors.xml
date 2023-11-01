@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightblack">#2B2929</color>
+    <color name="red">#C61313</color>
+    <color name="skyblue">#2C98C8</color>
+    <color name="tranEdit">#292E4B</color>
+    <color name="light_skyblue">#b8eaff</color>
+    <color name="lightray_skyblue">#d1f1ff</color>
+    <color name="dark_skyblue">#7cb5d3</color>
+    <color name="piper_color">#4a4a48</color>
+    <color name="ribena_color">#d9d2e9</color>
+    <color name="roasted_green">#4f5a43</color>
+    <color name="dark_green">#074548</color>
+    <color name="light_grey">#d5e2e4</color>
+    <color name="lightray_grey">#f0f3f4</color>
+    <color name="lightray_yellow">#f2ffcc</color>
+    <color name="dark_orange">#ff9900</color>
+</resources>
